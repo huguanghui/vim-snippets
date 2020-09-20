@@ -10,8 +10,7 @@ snippet main
 snippet mainn
 	int main(void)
 	{
-		${0}
-		return 0;
+		${0} return 0;
 	}
 ##
 ## Preprocessor
@@ -344,3 +343,6 @@ snippet todo
 # This is kind of convenient
 snippet .
 	[${1}]
+
+snippet ht
+	printf("HGH-TEST[%s %d]${1}\n", __FUNCTION__, __LINE__);

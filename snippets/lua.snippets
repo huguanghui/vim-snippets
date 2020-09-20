@@ -44,3 +44,15 @@ snippet print
 	print("${1:string}")
 snippet im
 	import "${1:import file}"
+snippet tb
+	target("${1}")
+		set_kind("binary")
+		add_files("src/*.c")
+snippet tst
+	target("${1}")
+		set_kind("static")
+		add_files("src/*.c")
+snippet tsh
+	target("${1}")
+		set_kind("shared")
+		add_files("src/*.c")
